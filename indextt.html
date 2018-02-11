@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Tom's First Page</title>
+    <script src="https://aframe.io/releases/0.7.0/aframe.min.js"></script>
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+    <h2>Tom's World</h2>
+    <a-scene>
+      <a-sky color="#FFFFFF"></a-sky>
+      <a-sphere color="#FF0000" radius="5" position="0 5 0">
+        <a-ring color="brown" radius-inner="5.5" radius-outer="7" position="0 0 0" rotation="75 5 0">
+          <a-animation attribute="rotation" dur="5000" to="0 360 0" direction="alternate"  repeat="indefinite"></a-animation>
+        </a-ring>
+      </a-sphere>
+
+      <a-box color="yellow" position="0 0 4"></a-box>
+      <a-plane position="0 0 1" rotation="-90 5 0" width="10" height="10" color="#7BC8A4" shadow></a-plane>
+
+    </a-scene>
+  </body>
+</html>
