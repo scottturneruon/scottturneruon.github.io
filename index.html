@@ -1,24 +1,23 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>First WebVR using AFrame</title>
-    <link rel="stylesheet" href="style.css">
+    <title>Tom's First Page</title>
     <script src="https://aframe.io/releases/0.7.0/aframe.min.js"></script>
+    <link rel="stylesheet" href="style.css">
   </head>
   <body>
-    <h1>Welcome to your first WebVR</h1>
-    <p>
-      Make something using <strong>AFrame</strong> to wow the world
-    </p>
+    <h2>Tom's World</h2>
     <a-scene>
       <a-sky color="#FFFFFF"></a-sky>
-      <a-text  value="UO" color="#111" position="0 1.8 -0.5"  align="center" width="2.6">
-      </a-text>
-      <a-text value="N" color="#111" position="0 1.675 -0.5" height="1" align="center"></a-text>
-      <a-box color="red" height="0.5" position="0 1.25 -0.5" width="0.5" depth="0.5" ></a-box>
-      <a-sphere position="0 1.25 -.5" radius="1.25" color="yellow"></a-sphere>
+      <a-sphere color="#FF0000" radius="5" position="0 5 0">
+        <a-ring color="brown" radius-inner="5.5" radius-outer="7" position="0 0 0" rotation="75 5 0">
+          <a-animation attribute="rotation" dur="5000" to="0 360 0" direction="alternate"  repeat="indefinite"></a-animation>
+        </a-ring>
+      </a-sphere>
+
+      <a-box color="yellow" position="0 0 4"></a-box>
+      <a-plane position="0 0 1" rotation="-90 5 0" width="10" height="10" color="#7BC8A4" shadow></a-plane>
+
     </a-scene>
   </body>
 </html>
