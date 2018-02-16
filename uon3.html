@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>First WebVR using AFrame</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://aframe.io/releases/0.7.0/aframe.min.js"></script>
+  </head>
+  <body>
+    <h1>Welcome to your first WebVR</h1>
+    <p>
+      Make something using <strong>AFrame</strong> to wow the world
+    </p>
+    <a-scene>
+      <a-entity position="-.5 0 2.5">
+        <a-camera></a-camera>
+      </a-entity>
+      <a-sky src="starry.jpg"></a-sky>
+      <a-text  value="UO" color="#FFF" position="-1 1.8 -0.5"  align="center" width="2.6">
+        <a-text value="N" color="#FFF" position="0 -0.125 0" height="1" align="center">
+        </a-text>
+        <a-animation attribute="rotation" dur="10000" to="360 360 360" repeat="indefinite"></a-animation>
+      </a-text>
+      
+      <a-box src="uon1.png" height="0.75" position="0 1.25 -0.5" width="0.75" depth="0.75" >
+        <a-sphere position="0 1.25 -.5" radius=".5" color="yellow" src="uon1.png">
+          <a-animation attribute="rotation" dur="7500" to="0 360 0" repeat="indefinite">
+          </a-animation>
+        </a-sphere>
+        <a-animation attribute="rotation" dur="15000" to="360 360 360" repeat="indefinite">
+        </a-animation>
+      </a-box>
+    </a-scene>
+  </body>
+</html>
